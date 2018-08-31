@@ -1,0 +1,146 @@
+@font-face{
+font-family: 'MullerRegular';
+src: url('fonts/Fontfabric - MullerRegular.otf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+body, html 
+{
+	font-size: calc( (100vw - 500px)/(1280 - 500) * (20 - 16) + 16px);
+	scroll-behavior: smooth;
+}
+body
+{
+	margin:0px;
+	font-family: MullerRegular;
+}
+a { 
+    text-decoration: none; 
+} 
+nav{
+	color:white;
+	background-color: #353232;
+}
+.navbar-nav > li.nav-item > a.nav-link{
+	color:white!important;
+	text-decoration: none!important; 
+	transition: all 0.2s!important;
+}
+.navbar-nav > li.nav-item > a.nav-link:hover {
+    color: #41c9f8 !important;
+}
+.text{
+	margin:5px;
+	text-align:center;
+	height:90px;
+}
+.hr{
+	max-width: 50px;
+    border-width: 3px;
+    border-color: #ffca00;
+	margin-top: 0.5rem!important;
+}
+.about{
+	text-align:center;
+	padding-bottom:20px;
+}
+.small_mach img{
+	padding:5px;
+}
+h1{
+	font-weight:bold;
+}
+h3{
+	font-weight:bold;
+	margin-top: 10px;
+}
+h4{
+	font-weight:bold;
+}
+.way h4{
+	width:100%;
+}
+.yandex{
+	color: #5db134;
+}
+.yandex a { 
+    text-decoration: underline;
+	color: #5db134;
+} 
+.way .row{
+	margin-left:80px;
+	margin-right:80px;
+	margin-bottom:40px;
+}
+.way .map{
+	margin-left:80px;
+	margin-right:80px;
+}
+.equipment .row{
+	text-align:center;
+}
+.str_img{
+	margin:10px;
+}
+.question_form{
+	background-image: url(img/background_form.png);
+}
+.question_form .col-sm img{
+	display:block;
+	margin:0px auto;
+}
+#myCarousel .carousel-inner .carousel-item img
+{
+	width:100%;
+	height:500px;
+}
+#myCarousel_second .carousel-inner .carousel-item img{
+	height:110px;
+	width:32%;
+}
+.row {
+	margin: 0px;
+}
+.button{
+	margin-top: 2rem;
+    background-color: #ffca00;
+	border-radius: 300px;
+	color: #212529;
+	border: solid 1px #ffca00;
+    cursor: pointer;
+	transition: all 0.2s;
+}
+.button:hover {
+    color: #41c9f8;
+	background-color: #e2e6ea;
+    border-color: #dae0e5;
+}
+fieldset input[type=text],fieldset input[type=tel],fieldset input[type=email],fieldset textarea[type=text] {
+	border: 1px solid #FFFFFF;
+	}
+footer{
+	background-color: #353232;
+}
+.icons img{
+ width:35px;	
+}
+.icons h4{
+	color:#35bff0;
+}
+.cont_footer{
+	color:white;
+	font-weight:bold;
+}
+.cont_footer .cont_text{
+	display:inline;
+	color:#35bff0;
+}
+ @media screen and (max-width: 700px) {
+     .hidden { display: none; }
+	 h4{
+	font-size:30px;
+}
+.about,.equipment{
+	font-size:25px;
+}
+   }
