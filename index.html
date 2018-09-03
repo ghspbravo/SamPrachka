@@ -1,256 +1,364 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="UTF-8"/> 	
-	<title>СамПРАЧКА</title>
-	<script src="jquery-3.3.1.min.js"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"><link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>СамПРАЧКА на Перерва</title>
+	<script async src="jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
 
-	<nav class="navbar sticky-top navbar-expand-lg navbar-light">
-  	<a class="navbar-brand" href="#">
-		<img src="img/logo.png">
-	</a>
-  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
-    	<span class="navbar-toggler-icon"></span>
-  	</button>
+	<nav class="row navbar sticky-top navbar-expand-lg navbar-dark">
+		<a class="navbar-brand col-sm-3 col-8" href="http://sam-prachka.ru/" target="blank">
+			<img src="img/logo.png">
+		</a>
 
-  	<div class="collapse navbar-collapse" id="navbar1">
-    	<ul class="navbar-nav ml-auto" style="margin-right: auto">
-      		<li class="nav-item active metka_about">
-        		<a class="nav-link" >о прачечной</a>
-      		</li>
-		    <li class="nav-item metka_way">
-		    	<a class="nav-link">как добраться</a>
-		    </li>
-			<li class="nav-item metka_equipment">
-		    	<a class="nav-link">комплектация</a>
-		    </li>
-    	</ul>
-		<div style="margin-right: 65px;" class="contact_info">8(903)714 76 64
-            <br>8(903)714 76 65
-            <br>
-        </div>
-  	</div>
-</nav>
-	<div class="text">
-		<h3>Прачечная самообслуживание в г.Москва, ул.Перерва, 43</h3>
-		<hr class="hr">
+		<div class="collapse navbar-collapse offset-xl-3 offset-lg-1 col-lg-6 col-xl-4" id="navbar1">
+			<ul class="navbar-nav col-12 row justify-content-between">
+				<li class="nav-item active metka_about">
+					<a class="nav-link">о прачечной</a>
+				</li>
+				<li class="nav-item metka_way">
+					<a class="nav-link">как добраться</a>
+				</li>
+				<li class="nav-item metka_equipment">
+					<a class="nav-link">комплектация</a>
+				</li>
+			</ul>
+			<div class="contact_info d-md-none">8(903)714 76 64
+				<br>8(903)714 76 65
+			</div>
+		</div>
+		<div class="contact_info d-none d-md-block col-md-2">8(903)714 76 64
+			<br>8(903)714 76 65
+		</div>
+		<button class="navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1"
+		 aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	</nav>
+	<div>
+		<h1 class="col-12">Прачечная самообслуживание в г.Москва, ул.Перерва, 43</h1>
 	</div>
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-	  <ol class="carousel-indicators">
-		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		<li data-target="#myCarousel" data-slide-to="1"></li>
-		<li data-target="#myCarousel" data-slide-to="2"></li>
-	  </ol>
-	  <div class="carousel-inner">
-		<div class="carousel-item active">
-		  <img class="d-block w-100" src="img/slider.jpg">
+	<div id="myCarousel" class="carousel slide promo-carousel" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="d-block w-100" src="img/slider.jpg">
+				<div class="carousel-caption align-items-center d-flex flex-column">
+					<h2 class="promo-title"><span>Акция</span><br> "Счастливый час"</h2>
+					<p class="promo-description">с 9-00 до 10-00 стирка до 9 кг 100 рублей*</p>
+					<p class="promo-mark">*стирка в машине с загрузкой до 9 кг 100 рублей (стандартный режим и деликатный режим до 60 градусов
+						включительно)
+					</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="img/slider.jpg">
+				<div class="carousel-caption align-items-center d-flex flex-column">
+					<h2 class="promo-title"><span>Акция</span><br> "Счастливый час"</h2>
+					<p class="promo-description">с 9-00 до 10-00 стирка до 9 кг 100 рублей*</p>
+					<p class="promo-mark">*стирка в машине с загрузкой до 9 кг 100 рублей (стандартный режим и деликатный режим до 60 градусов
+						включительно)
+					</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="img/slider.jpg">
+				<div class="carousel-caption align-items-center d-flex flex-column">
+					<h2 class="promo-title"><span>Акция</span><br> "Счастливый час"</h2>
+					<p class="promo-description">с 9-00 до 10-00 стирка до 9 кг 100 рублей*</p>
+					<p class="promo-mark">*стирка в машине с загрузкой до 9 кг 100 рублей (стандартный режим и деликатный режим до 60 градусов
+						включительно)
+					</p>
+				</div>
+			</div>
 		</div>
-		<div class="carousel-item">
-		  <img class="d-block w-100" src="img/slider.jpg">
-		</div>
-		<div class="carousel-item">
-		  <img class="d-block w-100" src="img/slider.jpg">
-		</div>
-	  </div>
-	  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		<span class="sr-only">Previous</span>
-	  </a>
-	  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		<span class="sr-only">Next</span>
-	  </a>
+		<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
 	</div>
-	<section class="about" id="about">
-	<div class="text">
-		<h1>о прачечной</h1>
-		<hr class="hr">
-	</div>
-	<div class="container-fluid">
-	  <div class="row align-items-center">
-		<div class="col-lg col-sm-12 small_mach">
-		 <h4>Загрузка машин, кг</h4>
-		 <img src = "img/stir6.png"/>
-		 <img src = "img/stir9.png"/>
-		 <img src = "img/stir13.png"/>
-		 <img src = "img/stir18.png"/>
-		 <img src = "img/stir22.png"/><br/>
-		 <img src = "img/such6.png"/>
-		 <img src = "img/such9.png"/>
-		 <img src = "img/such13.png"/>
-		 <img src = "img/such18.png"/>
-		 <img src = "img/such22.png"/>
+	<section class="container-fluid" id="about">
+		<h1 class="col-12">О прачечной</h1>
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="d-none d-md-block col-md-4 col-lg-3">
+					<h3>Загрузка машин, кг</h3>
+				</div>
+				<div class="d-none d-md-block col-md-2">
+					<h3>Близость к метро</h3>
+				</div>
+				<div class="d-none d-md-block col-md-2">
+					<h3>Время работы</h3>
+				</div>
+				<div class="d-none d-md-block col-md-2">
+					<h3>Особенности</h3>
+				</div>
+				<div class="d-none d-md-block col-md-2">
+					<h3>Телефон</h3>
+				</div>
+			</div>
+			<div class="row justify-content-center align-items-center">
+				<div class="col-md-4 col-lg-3 mb-3 mt-3">
+					<h3 class="d-md-none">Загрузка машин, кг</h3>
+					<img src="img/stir6.png" />
+					<img src="img/stir9.png" />
+					<img src="img/stir13.png" />
+					<img src="img/stir18.png" />
+					<img src="img/stir22.png" /><br/>
+					<img src="img/such6.png" />
+					<img src="img/such9.png" />
+					<img src="img/such13.png" />
+					<img src="img/such18.png" />
+					<img src="img/such22.png" />
+				</div>
+				<div class="col-md-2 mb-3 mt-3">
+					<h3 class="d-md-none">Близость к метро</h3>
+					<img src="img/metro.png" />Братиславская
+				</div>
+				<div class="col-md-2 mb-3 mt-3">
+					<h3 class="d-md-none">Время работы</h3>
+					<img src="img/time.png" />
+				</div>
+				<div class="col-md-2 mb-3 mt-3">
+					<h3 class="d-md-none">Особенности</h3>
+					<img src="img/utug.png" />
+					<img src="img/avatar.png" />
+					<img src="img/card.png" />
+				</div>
+				<div class="col-md-2 mb-3 mt-3">
+					<h3 class="d-md-none">Телефон</h3>
+					<p>
+						8(903)714 76 64<br/> 8(903)714 76 65<br/>
+					</p>
+				</div>
+			</div>
 		</div>
-		<div class="col-lg col-sm-12">
-			<h4>Близость к метро</h4>
-		 <img src = "img/metro.png"/>Братиславская
-		</div>
-		<div class="col-lg col-sm-12">
-		  <h4>Время работы</h4>
-		  <img src = "img/time.png"/>
-		</div>
-		<div class="col-lg col-sm-12">
-		  <h4>Особенности</h4>
-		  <img src = "img/utug.png"/>
-		  <img src = "img/avatar.png"/>
-		  <img src = "img/card.png"/>
-		</div>
-		<div class="col-lg col-sm-12">
-		  <h4>Телефон</h4>
-		  8(903)714 76 64<br/>
-		  8(903)714 76 65<br/>
-		</div>
-	  </div>
-	 </div>
 	</section>
 	<div id="myCarousel_second" class="carousel slide" data-ride="carousel">
-	  <div class="carousel-inner">
-		<div class="carousel-item active">
-		  <img src="img/slider2_1.png">
-		  <img src="img/slider2_2.png">
-		  <img src="img/slider2_3.png">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<div class="row">
+					<img class="col-md-4 m-0 mt-3" src="img/slider2_1.png">
+					<img class="col-md-4 m-0 mt-3" src="img/slider2_2.png">
+					<img class="col-md-4 m-0 mt-3" src="img/slider2_3.png">
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="row">
+					<img class="col-md-4 m-0 mt-3" src="img/slider2_1.png">
+					<img class="col-md-4 m-0 mt-3" src="img/slider2_2.png">
+					<img class="col-md-4 m-0 mt-3" src="img/slider2_3.png">
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="row">
+					<img class="col-md-4 m-0 mt-3" src="img/slider2_1.png">
+					<img class="col-md-4 m-0 mt-3" src="img/slider2_2.png">
+					<img class="col-md-4 m-0 mt-3" src="img/slider2_3.png">
+				</div>
+			</div>
 		</div>
-		<div class="carousel-item">
-		  <img src="img/slider2_1.png">
-		  <img src="img/slider2_2.png">
-		  <img src="img/slider2_3.png">
-		</div>
-		<div class="carousel-item">
-		  <img src="img/slider2_1.png">
-		  <img src="img/slider2_2.png">
-		  <img src="img/slider2_3.png">
-		</div>
-	  </div>
-	  <a class="carousel-control-prev" href="#myCarousel_second" role="button" data-slide="prev">
-		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		<span class="sr-only">Previous</span>
-	  </a>
-	  <a class="carousel-control-next" href="#myCarousel_second" role="button" data-slide="next">
-		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		<span class="sr-only">Next</span>
-	  </a>
+		<a class="carousel-control-prev" href="#myCarousel_second" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#myCarousel_second" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
 	</div>
-	<section class="way" id="way">
-		<div class="text">
-			<h1>как добраться</h1>
-			<hr class="hr">
-		</div>
-		<div class="text yandex">
-			<h4>Для выбора оптимального маршрута воспользуйтесь <a href="https://yandex.ru/maps">Яндекс.Картой</a><h4>
-		</div>
-		<div class="row">
-			<h4>Общественным транспортом:</h4><br/>
-			Прачечная самообслуживания &laquoСамПРАЧКА&raquo расположена в ТЦ &laquoЭкватор&raquo - в трёх минутах ходьбы от станции метро &laquoБратиславская&raquo(выход из первого вагона из центра, в переходе первый поворот налево). Выйти на улицу и перейти дорогу. Далее пройти насквозь через ТЦ &laquoБум&raquo. Выйти на улицу. Левее на дублёре улицы Перерва в круглом монолитном доме и расположен ТЦ &laquoЭкватор&raquo. Далее по лестнице на второй этаж, по коридору до конца, павильон А24.<br/>
-			Ближайшая автобусная остановка - &laquoМетро Братиславская&raquo: автобусы маршрутов № 522, № 336, № 713, № 762, №326.
-			<br/><h4>На личном автотранспорте:</h4><br/>
-			Для автовладельцев возле здания ТЦ &laquoЭкватор&raquo предусмотрена бесплатная парковка.
-		</div>
-		<div class="map">
-		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7669c0b55716c341e7501eae78a58ff9785103f97c85a86486e2a6774f0a02c7&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-		</div>
+	<section class="container" id="way">
+		<h1 class="col-12 text-center">Как добраться</h1>
+		<h3 class="text-center" style="color: #5db134">Для выбора оптимального маршрута воспользуйтесь <a href="https://yandex.ru/maps"
+			 target="blank">Яндекс.Картой</a><h4>
+				<div class="mt-5">
+					<h3>Общественным транспортом:</h3>
+					<p>
+						Прачечная самообслуживания &laquoСамПРАЧКА&raquo расположена в ТЦ &laquoЭкватор&raquo - в трёх минутах ходьбы от станции
+						метро &laquoБратиславская&raquo(выход из первого вагона из центра, в переходе первый поворот налево). Выйти на улицу
+						и перейти дорогу. Далее пройти насквозь через ТЦ &laquoБум&raquo. Выйти на улицу. Левее на дублёре улицы Перерва в
+						круглом монолитном доме и расположен ТЦ &laquoЭкватор&raquo. Далее по лестнице на второй этаж, по коридору до конца,
+						павильон А24.<br/> Ближайшая автобусная остановка - &laquoМетро Братиславская&raquo: автобусы маршрутов № 522,
+						№ 336, № 713, № 762, №326.
+					</p>
+					<h3>На личном автотранспорте:</h3>
+					<p>
+						Для автовладельцев возле здания ТЦ &laquoЭкватор&raquo предусмотрена бесплатная парковка.
+					</p>
+				</div>
+				<div class="mt-5">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7669c0b55716c341e7501eae78a58ff9785103f97c85a86486e2a6774f0a02c7&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
+				</div>
 	</section>
-	<section class="equipment" id="equipment">
-	<div class="text">
-			<h1>комплектность</h1>
-			<hr class="hr">
-	</div>
-	<div class="row">
-		<div class="col-sm-12 col-lg">
-		<h2>стиральные машины</h2>
-		<div class="str_img"><img src = "img/stir6.png"/> - 0 шт<br/></div>
-		<div class="str_img"><img src = "img/stir9.png"/> - 3 шт<br/></div>
-		<div class="str_img"><img src = "img/stir13.png"/> - 2 шт<br/></div>
-		<div class="str_img"><img src = "img/stir18.png"/> - 0 шт<br/></div>
-		<div class="str_img"><img src = "img/stir22.png"/> - 0 шт</div>
-		</div>
-		<div class="col-sm-12 col-lg">
-		<h2>сушильные машины</h2> 
-		 <div class="str_img"><img src = "img/such6.png"/> - 0 шт<br/></div>
-		 <div class="str_img"><img src = "img/such9.png"/> - 2 шт<br/></div>
-		 <div class="str_img"><img src = "img/such13.png"/> - 2 шт<br/></div>
-		 <div class="str_img"><img src = "img/such18.png"/> - 0 шт<br/></div>
-		 <div class="str_img"><img src = "img/such22.png"/> - 0 шт</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-12 col-lg">
-		<img src = "img/Shape 1.png"/><br/>Автомат по продаже жетонов
-		</div>
-		<div class="col-sm-12 col-lg">
-		<img src = "img/Shape 2.png"/><br/>Автомат по продаже дозированных средств для стирки
-		</div>
-		<div class="col-sm-12 col-lg">
-		<img src = "img/Shape 3.png"/><br/>Библиотека
-		</div>
-		<div class="col-sm-12 col-lg">
-		<img src = "img/Shape 4.png"/><br/>Кресла для ожидания
-		</div>
-	</div>
-	</section>
-	<section class="question_form">
-		<div class="text">
-			<h1>Есть вопросы?</h1>
-		</div>
-		<div class="text">
-			<h4>Оставьте Ваши контактные данные и мы Вам перезвоним<h4>
-		</div>
+	<section class="container" id="equipment">
+		<h1>Комплектность</h1>
 		<div class="row">
-			<div class="col-sm">
-			<form action="" method="POST">
-			<fieldset>
-			
-			<label for="title">Имя:</label><br/>
-			<input  size="80" class="input"  type="text" name="username"/>
-			<br/>
-			
-			<label for="tel">Номер телефона:</label><br/>
-			<input size="80" class="input"  type="tel" name="tel"/>
-			<br/>
+			<div class="col-12 col-sm-6 col-xl-4 offset-xl-2">
+				<h2 class="text-center">стиральные машины</h2>
+				<div class="row ml-auto mr-auto col-12 justify-content-center mt-3 align-items-center">
+					<img src="img/stir6.png" /> <p class="m-0">- 0 шт</p>
+				</div>
 
-			<label for="email">E-mail:</label></br>
-			<input size="80" class="input"  type="email" name="email"/>
-			<br/>
-			
-			<label for="body">Суть вопроса:</label></br>
-			<textarea rows="4" cols="80" type="text" name="body"></textarea>
-			<br/>
-			
-			
-			<p class="submit"><input class="button" name="submit" type= "submit" value="Отправить"></p>
-			
-			</fieldset>
-			</form>
+				<div class="row ml-auto mr-auto col-12 justify-content-center mt-3 align-items-center">
+					<img src="img/stir9.png" /> <p class="m-0">- 3 шт</p>
+				</div>
+
+				<div class="row ml-auto mr-auto col-12 justify-content-center mt-3 align-items-center">
+					<img src="img/stir13.png" /> <p class="m-0">- 2 шт</p>
+				</div>
+
+				<div class="row ml-auto mr-auto col-12 justify-content-center mt-3 align-items-center">
+					<img src="img/stir18.png" /> <p class="m-0">- 0 шт</p>
+				</div>
+
+				<div class="row ml-auto mr-auto col-12 justify-content-center mt-3 align-items-center">
+					<img src="img/stir22.png" /> <p class="m-0">- 0 шт</p>
+				</div>
 			</div>
-			<div class="col-sm hidden">
-				<img src = "img/formLogo.png"/>
+			<div class="col-12 col-sm-6 col-xl-4">
+				<h2 class="text-center">сушильные машины</h2>
+				<div class="row ml-auto mr-auto col-12 justify-content-center mt-3 align-items-center">
+					<img src="img/such6.png" /> <p class="m-0">- 0 шт</p>
+				</div>
+
+				<div class="row ml-auto mr-auto col-12 justify-content-center mt-3 align-items-center">
+					<img src="img/such9.png" /> <p class="m-0">
+						- 2 шт
+					</p>
+				</div>
+
+				<div class="row ml-auto mr-auto col-12 justify-content-center mt-3 align-items-center">
+					<img src="img/such13.png" /> <p class="m-0">
+						- 2 шт
+					</p>
+				</div>
+
+				<div class="row ml-auto mr-auto col-12 justify-content-center mt-3 align-items-center">
+					<img src="img/such18.png" /> <p class="m-0">
+						- 0 шт
+					</p>
+				</div>
+
+				<div class="row ml-auto mr-auto col-12 justify-content-center mt-3 align-items-center">
+					<img src="img/such22.png" /> <p class="m-0">
+						- 0 шт
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row mt-5">
+			<div class="col-md-3 d-flex mt-5 align-items-center justify-content-center col-12">
+				<img src="img/Shape 1.png" /><br/>
+				<p class="text-center m-0 col-7 d-md-none">Автомат по продаже жетонов</p>
+			</div>
+			<div class="col-md-3 d-flex mt-5 align-items-center justify-content-center col-12">
+				<img src="img/Shape 2.png" /><br/>
+				<p class="text-center m-0 col-7 d-md-none">Автомат по продаже дозированных средств для стирки</p>
+			</div>
+			<div class="col-md-3 d-flex mt-5 align-items-center justify-content-center col-12">
+				<img src="img/Shape 3.png" /><br/>
+				<p class="text-center m-0 col-7 d-md-none">Библиотека</p>
+			</div>
+			<div class="col-md-3 d-flex mt-5 align-items-center justify-content-center col-12">
+				<img src="img/Shape 4.png" /><br/>
+				<p class="text-center m-0 col-7 d-md-none">Кресла для ожидания</p>
+			</div>
+		</div>
+		<div class="row mt-3 d-none d-md-flex">
+			<div class="col-3">
+				<p class="text-center">Автомат по продаже жетонов</p>
+			</div>
+			<div class="col-3">
+				<p class="text-center">Автомат по продаже дозированных средств для стирки</p>
+			</div>
+			<div class="col-3">
+				<p class="text-center">Библиотека</p>
+			</div>
+			<div class="col-3">
+				<p class="text-center">Кресла для ожидания</p </div>
+			</div>
+	</section>
+	<section class="container-fluid" id="contacts">
+		<h1>Есть вопросы?</h1>
+		<p class="text-center">Оставьте Ваши контактные данные и мы Вам перезвоним</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-12">
+					<form action="" method="POST">
+						<label for="title">Имя:</label>
+						<input size="80" class="input" type="text" name="username" />
+
+						<label for="tel">Номер телефона:</label>
+						<input size="80" class="input" type="tel" name="tel" />
+
+						<label for="email">E-mail:</label>
+						<input size="80" class="input" type="email" name="email" />
+
+						<label for="body">Суть вопроса:</label>
+						<textarea rows="4" cols="80" type="text" name="body"></textarea>
+
+						<button class="col-lg-3 col-sm-4 col-6 mt-5"><p class="m-0">Отправить</p></button>
+
+					</form>
+				</div>
+				<div class="d-none d-md-block offset-md-1 col-md-5">
+					<img src="img/formLogo.png" />
+				</div>
 			</div>
 		</div>
 	</section>
-	<footer>
-	<div class="row">
-	<div class="col-lg col-sm-12 icons">
-		<h4>мы в соц сетях</h4>
-		<a href="#"><img src = "img/facebook.svg"/></a>
-		<a href="#"><img src = "img/vk.svg"/></a>
-		<a href="#"><img src = "img/instagram.svg"/></a>
-		<a href="#"><img src = "img/youtube.svg"/></a>
-	</div>
-	<div class="col-lg col-sm-12 cont_footer">
-		<h4><div class="cont_text">единая справочная служба:</div> 8 800 777 15 27</h4>
-		<h4><div class="cont_text">автоответчик 24/7:</div> 8 495 640 40 48</h4>
-	</div>
-	<div class="col-lg col-sm-12 cont_footer">
-		<h4><div class="cont_text">E-MAIL:</div> samprachka@gmail.com</h4>
-		<h4><div class="cont_text">VIBER, WHATSAPP, TELEGRAM:</div> 8 903 714 76 64</h4>
-	</div>
-	</div>
+	<footer class="container-fluid">
+		<div class="row">
+			<div class="mt-3 col-md-3">
+				<h3><span class="alt">МЫ В СОЦ СЕТЯХ</span></h3>
+				<div class="row">
+					<a href="#"><img class="icon" src="img/facebook.svg" /></a>
+					<a href="#"><img class="icon" src="img/vk.svg" /></a>
+					<a href="#"><img class="icon" src="img/instagram.svg" /></a>
+					<a href="#"><img class="icon" src="img/youtube.svg" /></a>
+				</div>
+			</div>
+			<div class="mt-3 col-md-5">
+				<h3>
+					<span class="alt">ЕДИНАЯ СПРАВОЧНАЯ СЛУЖБА:</span><br class="d-xl-none"> 8 800 777 15 27
+				</h3>
+				<h3 class="mt-4">
+					<span class="alt">АВТООТВЕТЧИК 24/7:</span><br class="d-xl-none"> 8 495 640 40 48
+				</h3>
+
+			</div>
+			<div class="mt-3 col-md-4 ">
+				<h3>
+					<span class="alt">E-MAIL:</span><br class="d-xl-none"> samprachka@gmail.com
+				</h3>
+				<h3 class="mt-4">
+					<span class="alt">VIBER, WHATSAPP, TELEGRAM:</span><br class="d-xl-none"> 8 903 714 76 64
+				</h3>
+			</div>
+		</div>
 	</footer>
-	<script src="script.js"></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script></body>
-</html>	
+	<script defer src="script.js"></script>
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	 crossorigin="anonymous"></script>
+	<script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	 crossorigin="anonymous"></script>
+</body>
 
+</html>
