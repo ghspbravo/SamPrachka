@@ -123,6 +123,9 @@ nav{
 .promo-carousel .carousel-item {
 	height: 70vh;
 }
+.promo-carousel {
+	margin: -5px;
+}
 .carousel-item img {
 	object-fit: cover;
 	height: 100%;
@@ -143,7 +146,7 @@ p.promo-description {
 p.promo-mark {
 	font-size: 14px;
 	position: absolute;
-    bottom: 5vh;
+    bottom: 1vh;
 }
 h2.promo-title,
 p.promo-description,
@@ -161,6 +164,10 @@ footer{
 	background-color: #353232;
 	color: white;
 	padding: 40px 0;
+}
+footer h3 {
+	font-family: 'MullerRegular';
+	font-weight: bold;
 }
 .icon {
 	width:35px;	
