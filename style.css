@@ -229,14 +229,14 @@ footer h3 {
 
 @media (max-width: 576px) {
 	h2.promo-title {
-		font-size: 35px;
+		font-size: 5vh;
 	}
 	
 	p.promo-description {
-		font-size: 20px;
+		font-size: 3vh;
 	}
 	p.promo-mark {
-		font-size: 12px;
+		font-size: 10px;
 	}
 	.wrapper_circle {
 		top: -2%;

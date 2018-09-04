@@ -45,4 +45,4 @@ var Visible = function (target,metka) {
 	};
 	};
 	
-document.querySelectorAll('h2.promo-title').forEach(title => title.style.margin = `${window.innerHeight/1080*10}vh 0 ${window.innerHeight/1080*5}vh 0`)
+document.querySelectorAll('h2.promo-title').forEach(title => title.style.margin = `${window.innerHeight/1080*20}vh 0 ${window.innerHeight/1080*5}vh 0`)
