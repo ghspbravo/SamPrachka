@@ -132,6 +132,13 @@ nav{
 	object-fit: cover;
 	min-height: 100%;
 	width: 100%;
+	mix-blend-mode: multiply;
+}
+.carousel-item svg {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .carousel-caption {
 	height: 100%;
