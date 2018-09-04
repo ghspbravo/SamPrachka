@@ -154,7 +154,7 @@ h2.promo-title,
 p.promo-description,
 p.promo-mark {
 	text-transform: uppercase;
-	text-shadow: 1px 1px 5px black, -1px -1px 5px black;
+	text-shadow: 1px 1px 5px rgba(0,0,0,0.5), -1px -1px 5px rgba(0,0,0,0.5);
 }
 #contacts {
 	background-color: #f2f2f2;
