@@ -129,6 +129,7 @@ nav{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	overflow: hidden;
 }
 .promo-carousel {
 	margin: -5px;
@@ -221,6 +222,9 @@ footer h3 {
 		left: 4%;
 		width: 92%;
 	}
+	h2.promo-title {
+		font-size: 45px;
+	}
 }
 
 @media (max-width: 576px) {
@@ -237,5 +241,7 @@ footer h3 {
 	.wrapper_circle {
 		top: -2%;
 		height: 106%;
+		left: -16%;
+		width: 132%;
 	}
 }
