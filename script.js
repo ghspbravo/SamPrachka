@@ -35,12 +35,14 @@ var Visible = function (target,metka) {
 		bottom: window.pageYOffset + document.documentElement.clientHeight
 	  };
   
-	if (targetPosition.bottom > windowPosition.top && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
-	  targetPosition.top < windowPosition.bottom && // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден снизу
+	if (targetPosition.bottom > windowPosition.top + 100 && // Если позиция нижней части элемента больше позиции верхней чайти окна, то элемент виден сверху
+	  targetPosition.top < windowPosition.top + 100 && // Если позиция верхней части элемента меньше позиции нижней чайти окна, то элемент виден снизу
 	  targetPosition.right > windowPosition.left && // Если позиция правой стороны элемента больше позиции левой части окна, то элемент виден слева
 	  targetPosition.left < windowPosition.right) { // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
 	 metka.classList.add("active_scrol");
 	} else {
 	 metka.classList.remove("active_scrol");
 	};
-  };
+	};
+	
+document.querySelectorAll('h2.promo-title').forEach(title => title.style.margin = `${window.innerHeight/1080*10}vh 0 ${window.innerHeight/1080*5}vh 0`)

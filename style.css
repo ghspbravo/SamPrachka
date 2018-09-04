@@ -109,7 +109,9 @@ nav{
 	border: none;
 	outline: none !important;
 }
-
+.contact_info {
+	font-size: 14px;
+}
 .promo-carousel .carousel-indicators li {
 	border-radius: 50%;
     width: 15px;
@@ -128,19 +130,19 @@ nav{
 }
 .carousel-item img {
 	object-fit: cover;
-	height: 100%;
+	min-height: 100%;
 	width: 100%;
 }
 .carousel-caption {
 	height: 100%;
 }
 h2.promo-title {
-    font-size: 78px;
-    margin: 15vh 0 5vh 0;
+    font-size: 70px;
+    margin: 10vh 0 2vh 0;
 }
 
 p.promo-description {
-    font-size: 50px;
+    font-size: 45px;
 }
 
 p.promo-mark {
@@ -168,6 +170,7 @@ footer{
 footer h3 {
 	font-family: 'MullerRegular';
 	font-weight: bold;
+	font-size: 16px;
 }
 .icon {
 	width:35px;	
