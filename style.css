@@ -101,6 +101,8 @@ nav{
 	transition: all 0.2s;
 	text-transform: uppercase;
 	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 1px;
 }
 .navbar-nav > li.nav-item > a.nav-link:hover {
     color: #41c9f8 !important;
@@ -124,6 +126,9 @@ nav{
 }
 .promo-carousel .carousel-item {
 	height: 70vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 .promo-carousel {
 	margin: -5px;
@@ -176,7 +181,7 @@ footer{
 }
 footer h3 {
 	font-family: 'MullerRegular';
-	font-weight: bold;
+	font-weight: 500;
 	font-size: 16px;
 }
 .icon {
@@ -190,7 +195,16 @@ footer h3 {
 .active_scrol a {
 	color: var(--main_color) !important;
 }
-
+.wrapper_circle {
+    position: absolute;
+    left: 14%;
+    top: -38%;
+    background-color: #7bc343;
+    width: 72%;
+    height: 176%;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+}
 @media (max-width: 1200px) {
 	h2.promo-title {
 		font-size: 55px;
@@ -203,7 +217,10 @@ footer h3 {
 }
 
 @media (max-width: 992px) {
-
+	.wrapper_circle {
+		left: 4%;
+		width: 92%;
+	}
 }
 
 @media (max-width: 576px) {
@@ -216,5 +233,9 @@ footer h3 {
 	}
 	p.promo-mark {
 		font-size: 12px;
+	}
+	.wrapper_circle {
+		top: -2%;
+		height: 106%;
 	}
 }
